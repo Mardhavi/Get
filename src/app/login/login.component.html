@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <ul>
+        <li *ngFor="let detail of details"><a routerLink="{{detail.id}}">{{detail.id}}</a></li>
+      </ul>
+     </div> 
+     <div class="col-sm-6">
+    <app-info></app-info>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
